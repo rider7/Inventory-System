@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AddPartMain" fx:id="modifyPart" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="641.0" style="-fx-background-color: #c0c0c0;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inventory_System.View_Controller.Modify_Part_Controller">
+<children>
+    <Label layoutX="32.0" layoutY="16.0" prefHeight="21.0" prefWidth="106.0" text="Modify Part" textFill="#126be3">
+        <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+        </font>
+    </Label>
+    <RadioButton fx:id="partInHouseOption" layoutX="174.0" layoutY="17.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="106.0" text="In-House">
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+        <toggleGroup>
+            <ToggleGroup fx:id="partSource" />
+        </toggleGroup>
+        <font>
+            <Font name="Times New Roman" size="14.0" />
+        </font>
+    </RadioButton>
+    <RadioButton fx:id="partOutsourceOption" layoutX="321.0" layoutY="17.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="117.0" selected="true" text="Outsourced" toggleGroup="$partSource">
+        <font>
+            <Font name="Times New Roman" size="14.0" />
+        </font>
+    </RadioButton>
+    <Label layoutX="55.0" layoutY="78.0" prefHeight="27.0" prefWidth="75.0" text="ID">
+        <font>
+            <Font name="Times New Roman" size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="machineIDLabel" layoutX="57.0" layoutY="340.0" prefHeight="21.0" prefWidth="117.0" text="Company Name">
+        <font>
+            <Font name="Times New Roman" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="52.0" layoutY="230.0" prefHeight="27.0" prefWidth="106.0" text="Price/Cost">
+        <font>
+            <Font name="Times New Roman" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="321.0" layoutY="284.0" prefHeight="21.0" prefWidth="75.0" text="Min">
+        <font>
+            <Font name="Times New Roman" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="52.0" layoutY="183.0" prefHeight="21.0" prefWidth="75.0" text="Inv">
+        <font>
+            <Font name="Times New Roman" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="57.0" layoutY="283.0" prefHeight="21.0" prefWidth="83.0" text="Max">
+        <font>
+            <Font name="Times New Roman" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="52.0" layoutY="131.0" prefHeight="21.0" prefWidth="75.0" text="Name">
+        <font>
+            <Font name="Times New Roman" size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="partModifyName" layoutX="170.0" layoutY="120.0" prefHeight="42.0" prefWidth="211.0" promptText="Part Name">
+        <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="partModifyStock" layoutX="170.0" layoutY="172.0" prefHeight="42.0" prefWidth="211.0" promptText="Inventory">
+        <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="partModifyPrice" layoutX="170.0" layoutY="223.0" prefHeight="42.0" prefWidth="211.0" promptText="Price/Cost">
+        <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="partModifyID" disable="true" editable="false" layoutX="170.0" layoutY="70.0" prefHeight="42.0" prefWidth="211.0" text="1">
+        <font>
+            <Font name="System Italic" size="14.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="partModifyCompany" layoutX="170.0" layoutY="329.0" prefHeight="42.0" prefWidth="204.0" promptText="Company Name">
+        <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="partModifyMax" layoutX="170.0" layoutY="274.0" prefHeight="42.0" prefWidth="136.0" promptText="Maximum">
+        <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="partModifyMin" layoutX="396.0" layoutY="273.0" prefHeight="42.0" prefWidth="136.0" promptText="Minimum">
+        <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+        </font>
+    </TextField>
+    <Button fx:id="partSaveButton2" layoutX="251.0" layoutY="401.0" mnemonicParsing="false" onAction="#partSaveHandler" prefHeight="42.0" prefWidth="97.0" text="Save" />
+    <Button fx:id="partCancelButton2" layoutX="374.0" layoutY="401.0" mnemonicParsing="false" onAction="#partBackButtonHandler2" prefHeight="42.0" prefWidth="97.0" text="Cancel" />
+</children>
+</AnchorPane>
